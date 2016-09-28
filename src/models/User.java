@@ -5,6 +5,10 @@ import com.google.common.base.Objects;
 
 public class User 
 {
+  static Long   counter = 0l;
+
+  public Long   id;
+	  
   public String firstName;
   public String lastName;
   public String email;
@@ -12,6 +16,7 @@ public class User
 
   public User(String firstName, String lastName, String email, String password)
   {
+	this.id        = counter++;
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
