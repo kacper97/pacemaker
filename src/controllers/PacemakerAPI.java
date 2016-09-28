@@ -10,7 +10,8 @@ import models.User;
 
 public class PacemakerAPI
 {
-  private Map<String, User> users = new HashMap<String, User>();
+	//  private Map<String, User> users = new HashMap<String, User>(); 
+  private Map<String, User> users = new HashMap<>();
 
   public Collection<User> getUsers ()
   {
