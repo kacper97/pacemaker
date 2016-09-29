@@ -1,13 +1,14 @@
 package models;
 
 import static org.junit.Assert.*;
-
+import org.junit.Test;
+/*
 import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
+
 
 public class ActivityTest
 {
@@ -20,6 +21,26 @@ public class ActivityTest
     new Activity ("cycle", "school", 4.5)
   };
 
+  Activity test = new Activity ("walk",  "fridge", 0.001);
+
+  @Test
+  public void testCreate()
+  {
+    assertEquals ("walk",          test.type);
+    assertEquals ("fridge",        test.location);
+    assertEquals (0.0001, 0.001,   test.distance);    
+  }
+
+  @Test
+  public void testToString()
+  {
+    assertEquals ("Activity{" + test.id + ", walk, fridge, 0.001, []}", test.toString());
+  }
+}
+*/
+
+public class ActivityTest
+{ 
   Activity test = new Activity ("walk",  "fridge", 0.001);
 
   @Test
