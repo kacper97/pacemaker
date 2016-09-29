@@ -47,4 +47,18 @@ public class UserTest
 	  //add .addValue(id) to the user.java toString method for test to run.
 	  assertEquals ("User{" + homer.id + ", homer, simpson, secret, homer@simpson.com}", homer.toString());
   }
+  
+  @Test
+  public void testEquals()
+  {
+    User homer2 = new User ("homer", "simpson", "homer@simpson.com",  "secret"); 
+    User bart   = new User ("bart", "simpson", "bartr@simpson.com",  "secret"); 
+
+    assertEquals(homer, homer);
+    assertEquals(homer, homer2);
+    assertNotEquals(homer, bart);
+    
+    assertSame(homer, homer);
+    assertNotSame(homer, homer2);
+  }  
 }
